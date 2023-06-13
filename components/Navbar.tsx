@@ -50,19 +50,19 @@ function Navbar() {
               </a>
             </li> */}
             <li className="nav-item">
-              <a className="txt text-[14px] !font-medium" href="/product">
+              <Link className="txt text-[14px] !font-medium" href="/product">
                 Products
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="txt text-[14px] !font-medium " target="_blank" href="https://docs.loozr.io/infrastructure/loozr-ecosystem">
+              <Link className="txt text-[14px] !font-medium " target="_blank" href="https://docs.loozr.io/infrastructure/loozr-ecosystem">
                 Ecosystem
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="txt text-[14px] !font-medium  " target="_blank" href="https://docs.loozr.io/infrastructure/loozr-applications">
+              <Link className="txt text-[14px] !font-medium  " target="_blank" href="https://docs.loozr.io/infrastructure/loozr-applications">
                 Applications
-              </a>
+              </Link>
             </li>
             <li className="nav-item relative ">
               <div 
@@ -88,9 +88,9 @@ function Navbar() {
               )}
             </li>
             <li className="nav-item">
-              <a className="txt text-[14px] !font-medium  " href="https://medium.com/@officialloozr">
+              <Link className="txt text-[14px] !font-medium  " href="https://medium.com/@officialloozr">
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="nav-item relative w-[232px] ">
               <div 
@@ -125,19 +125,19 @@ function Navbar() {
                 <DrawerBody style={{backgroundColor: "#0c0f15"}} >
                   <div className=" w-full gap-y-4 flex flex-col !text-white px-6 pt-14 " > 
                     
-                      <a className="txt text-[14px] !font-medium  " href="/product">
+                      <Link className="txt text-[14px] !font-medium  " href="/product">
                         Products
-                      </a>
+                      </Link>
                     
                     
-                      <a className="txt text-[14px] !font-medium   " href="">
+                      <Link className="txt text-[14px] !font-medium   " href="">
                         Ecosystem
-                      </a>
+                      </Link>
                     
                     
-                      <a className="txt text-[14px] !font-medium  " href="">
+                      <Link className="txt text-[14px] !font-medium  " href="">
                         Features
-                      </a>
+                      </Link>
                     
                     
                     

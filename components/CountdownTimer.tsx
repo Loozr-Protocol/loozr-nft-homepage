@@ -3,14 +3,14 @@
 import React, { useState, useEffect } from 'react';
 
 const CountdownTimer = () => {
-
-  const [days, setDays] = useState(0)
-  const [hours, setHours] = useState(0)
-  const [minutes, setMinutes] = useState(0)
-  const [seconds, setSeconds] = useState(0)
+  const [showTime, setShowTime] = useState(false);
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("07/22/2023 23:59:59")
+    const target = new Date("07/22/2023 23:59:59");
 
     const interval = setInterval(() => {
     const now = new Date()
@@ -28,6 +28,11 @@ const CountdownTimer = () => {
     const s = Math.floor((difference % (1000* 60)) / 1000);
     setSeconds(s);
 
+
+    if (d <= 0 && h <= 0 && m <= 0 && s <= m) {
+      setShowTime(true);
+    }
+
     }, 1000)
     
     return () => clearInterval(interval)
@@ -36,28 +41,43 @@ const CountdownTimer = () => {
 
 
   return (
+
     <div>
-      <div>
-        <span>{days}</span>
-        <span>Days</span>
-      </div>
 
-      <div>
-        <span>{hours}</span>
-        <span>Hours</span>
-      </div>
+      {showTime ? (
+        <>
+          <h1>Here&apos;s the NFT</h1>
+        </>
+      ) : (
 
-      <div>
-        <span>{minutes}</span>
-        <span>Minutes</span>
-      </div>
+      <>
+        <div className="pt-28">
+          <div className="uppercase flex">
+            <div className="flex flex-col items-center p-4 border-t mr-6 rounded-md w-[94px]">
+              <span className="text-[40px] font-black">{days}</span>
+              <span className="text-lg text-gray-400 font-medium">Days</span>
+            </div>
 
-      <div>
-        <span>{seconds}</span>
-        <span>Seconds</span>
-      </div>
+            <div className="flex flex-col items-center p-4 border-t mr-6 rounded-md w-[94px]">
+              <span className="text-[40px] font-black">{hours}</span>
+              <span className="text-lg text-gray-400 font-medium">Hours</span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 border-t mr-6 rounded-md w-[94px]">
+              <span className="text-[40px] font-black">{minutes}</span>
+              <span className="text-lg text-gray-400 font-medium">Minutes</span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 border-t mr-6 rounded-md w-[94px]">
+              <span className="text-[40px] font-black">{seconds}</span>
+              <span className="text-lg text-gray-400 font-medium">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </>
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default CountdownTimer
