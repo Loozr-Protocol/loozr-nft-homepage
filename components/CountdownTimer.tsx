@@ -42,7 +42,7 @@ const CountdownTimer = () => {
 
   return (
 
-    <div>
+    <div className="max-w-7xl mx-auto">
 
       {showTime ? (
         <>

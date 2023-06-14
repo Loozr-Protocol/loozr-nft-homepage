@@ -10,6 +10,12 @@ module.exports = {
       zIndex: {
         '999': '999',
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
+      colors: {
+        'regal-blue': '#9EAAC0',
+      },
     },
   },
   plugins: [],

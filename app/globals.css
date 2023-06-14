@@ -12,10 +12,33 @@
 }
 
 :root {
-  max-width: 1280px;
   margin: 0 auto;
 }
 
+.game {
+  -webkit-text-stroke: 1px #393C43;
+}
+
 .navbar {
-  @apply  top-0 left-0 p-0 m-0 w-full bg-transparent min-h-[80px] z-999 border-b-2 border-transparent
+  @apply top-0 left-0 p-0 m-0 w-full bg-transparent min-h-[80px] z-999 border-b-2 border-transparent
+}
+
+.bg-suBlack-gradient {
+  background: linear-gradient(196.03deg, #536079 -80.5%, #0C0F15 29.33%);
+}
+
+.text-pinkBlue-gradient {
+  background: linear-gradient(255.45deg, #8369F4 39.69%, #F039E2 65.08%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+}
+
+.bluePink-gradient {
+  background: linear-gradient(237.71deg, #8369F4 24.07%, #F039E2 116.61%);
+}
+
+.colorme {
+  background: #9EAAC0;
 }
