@@ -27,6 +27,12 @@
   background: linear-gradient(196.03deg, #536079 -80.5%, #0C0F15 29.33%);
 }
 
+.nft-img {
+  background: cover no-repeat;
+  transform: rotate(4.824deg);
+  flex-shrink: 0;
+}
+
 .text-pinkBlue-gradient {
   background: linear-gradient(255.45deg, #8369F4 39.69%, #F039E2 65.08%);
   -webkit-background-clip: text;

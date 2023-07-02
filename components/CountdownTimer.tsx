@@ -10,7 +10,7 @@ const CountdownTimer = () => {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("07/22/2023 23:59:59");
+    const target = new Date("08/22/2023 23:59:59");
 
     const interval = setInterval(() => {
     const now = new Date()
@@ -53,24 +53,24 @@ const CountdownTimer = () => {
       <>
         <div className="pt-28">
           <div className="uppercase flex">
-            <div className="flex flex-col items-center p-4 border-t mr-6 rounded-md w-[94px]">
-              <span className="text-[40px] font-black">{days}</span>
-              <span className="text-lg text-gray-400 font-medium">Days</span>
+            <div className="flex flex-col items-center p-2.5 lg:p-4 border-t mr-4 lg:mr-6 rounded-md w-[94px]">
+              <span className="lg:text-[40px] text-2xl font-black">{days}</span>
+              <span className="text-[15px] lg:text-lg text-gray-400 font-medium">Days</span>
             </div>
 
-            <div className="flex flex-col items-center p-4 border-t mr-6 rounded-md w-[94px]">
-              <span className="text-[40px] font-black">{hours}</span>
-              <span className="text-lg text-gray-400 font-medium">Hours</span>
+            <div className="flex flex-col items-center p-2.5 lg:p-4 border-t mr-4 lg:mr-6 rounded-md w-[94px]">
+              <span className="lg:text-[40px] text-2xl  font-black">{hours}</span>
+              <span className="text-[15px] lg:text-lg text-gray-400 font-medium">Hours</span>
             </div>
 
-            <div className="flex flex-col items-center p-4 border-t mr-6 rounded-md w-[94px]">
-              <span className="text-[40px] font-black">{minutes}</span>
-              <span className="text-lg text-gray-400 font-medium">Minutes</span>
+            <div className="flex flex-col items-center p-2.5 lg:p-4 border-t mr-4 lg:mr-6 rounded-md w-[94px]">
+              <span className="lg:text-[40px] text-2xl  font-black">{minutes}</span>
+              <span className="text-[15px] lg:text-lg text-gray-400 font-medium">Minutes</span>
             </div>
 
-            <div className="flex flex-col items-center p-4 border-t mr-6 rounded-md w-[94px]">
-              <span className="text-[40px] font-black">{seconds}</span>
-              <span className="text-lg text-gray-400 font-medium">Seconds</span>
+            <div className="flex flex-col items-center p-2.5 lg:p-4 border-t mr-4 lg:mr-6 rounded-md w-[94px]">
+              <span className="lg:text-[40px] text-2xl  font-black">{seconds}</span>
+              <span className="text-[15px] lg:text-lg text-gray-400 font-medium">Seconds</span>
             </div>
           </div>
         </div>
