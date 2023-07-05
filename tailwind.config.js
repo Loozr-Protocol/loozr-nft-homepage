@@ -15,6 +15,10 @@ module.exports = {
       },
       colors: {
         'regal-blue': '#9EAAC0',
+        'someBlue': '#536079',
+      },
+      screens: {
+        'sl': '1152px',
       },
     },
   },
