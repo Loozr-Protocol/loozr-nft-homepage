@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         'regal-blue': '#9EAAC0',
         'someBlue': '#536079',
+        'natBlue': '#11151D',
       },
       screens: {
         'sl': '1152px',
