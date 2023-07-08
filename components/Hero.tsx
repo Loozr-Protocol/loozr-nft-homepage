@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
 
         </div>
-        <div className="flex bg-transparent mt-[24rem] md:ml-[9rem]">
+        <div className="flex bg-transparent mt-[24rem] md:mt-0 md:ml-[9rem]">
 
           <div className="z-10 md:mt-[6rem] bg-transparent">
             <Image 

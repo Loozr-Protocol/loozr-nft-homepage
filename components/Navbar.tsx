@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           <ul className="flex space-x-4">
             <li>
               <a href="/" className="relative group">
-                <span>Home</span>
+                <span>Products</span>
               </a>
             </li>
             <li>
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                 onMouseLeave={toggleDropdown}
               >
                 <a href="/" className="flex items-center">
-                  <span>Services</span>
+                  <span>Ecosystem</span>
                 </a>
                 {isDropdownOpen && (
                   <div className="absolute bg-gray-800 px-4 py-2 mt-4 rounded-lg text-white">
@@ -46,10 +46,16 @@ const Navbar: React.FC = () => {
               </div>
             </li>
             <li>
+              <a href="/">Features</a>
+            </li>
+            <li>
               <a href="/">About</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="/">Blog</a>
+            </li>
+            <li>
+              <a href="/">Join Community</a>
             </li>
           </ul>
         </div>
