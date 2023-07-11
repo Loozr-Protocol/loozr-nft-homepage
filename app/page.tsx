@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-import { Carousel, CountdownTimer, Hero, Modal } from "@/components";
+import { Carousel, CountdownTimer, FAQ, Footer, Hero, HowTo, Modal } from "@/components";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -10,6 +10,34 @@ export default function Home() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const items = [
+    {
+      title: 'Card 1',
+      image: 'https://via.placeholder.com/150',
+      content: 'Content 1',
+    },
+    {
+      title: 'Card 2',
+      image: 'https://via.placeholder.com/150',
+      content: 'Content 2',
+    },
+    {
+      title: 'Card 2',
+      image: 'https://via.placeholder.com/150',
+      content: 'Content 2',
+    },    
+    {
+      title: 'Card 2',
+      image: 'https://via.placeholder.com/150',
+      content: 'Content 2',
+    },
+    {
+      title: 'Card 2',
+      image: 'https://via.placeholder.com/150',
+      content: 'Content 2',
+    },
+  ];
   
   return (
     <main className="overflow-hidden">
@@ -35,8 +63,14 @@ export default function Home() {
       </div>
 
       <div>
-        <Carousel />
+        <Carousel items={items} />
       </div>
+
+      <HowTo />
+
+      <FAQ />
+
+      <Footer />
 
     </main>
   )

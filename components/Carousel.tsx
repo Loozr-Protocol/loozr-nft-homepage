@@ -1,38 +1,48 @@
 "use client";
 
+import Image from 'next/image';
+
 import React, { useState } from 'react';
 
-const Carousel: React.FC = () => {
+const Carousel = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? 4 : prevIndex - 1));
+    setActiveIndex((activeIndex - 1 + items.length) % items.length);
   };
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 4 ? 0 : prevIndex + 1));
+    setActiveIndex((activeIndex + 1) % items.length);
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <button onClick={handlePrev} className="p-4 bg-blue-500 text-white">
-        Prev
-      </button>
-      <div className="flex justify-center items-center space-x-4">
-        {[...Array(5)].map((_, index) => (
+    <div className="flex space-x-4">
+
+      <div className="flex space-x-4">
+        {items.map((item, index) => (
           <div
             key={index}
-            className={`p-4 border ${activeIndex === index ? 'border-blue-500' : 'border-gray-300'}`}
+            className={`transform transition-transform duration-500 ease-in-out ${
+              index === activeIndex
+                ? 'scale-100 opacity-100'
+                : 'scale-75 opacity-50'
+            }`}
           >
-            {index + 1}
-            <button className="opacity-0 hover:opacity-100">Click me</button>
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src={item.image} alt={item.title} />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">{item.title}</div>
+                <p className="text-gray-700 text-base">{item.content}</p>
+              </div>
+            </div>
           </div>
         ))}
+
       </div>
-     
-     <button
-      onClick={handleNext} className="p-4 bg-blue-500 text-white">Next
-      </button>
+      <div className="">        
+        <button onClick={handlePrev}>Prev</button>
+        <button onClick={handleNext}>Next</button>
+      </div>
     </div>
   );
 };
