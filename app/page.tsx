@@ -14,27 +14,22 @@ export default function Home() {
   const items = [
     {
       title: 'Card 1',
-      image: 'https://via.placeholder.com/150',
       content: 'Content 1',
     },
     {
       title: 'Card 2',
-      image: 'https://via.placeholder.com/150',
       content: 'Content 2',
     },
     {
       title: 'Card 2',
-      image: 'https://via.placeholder.com/150',
       content: 'Content 2',
     },    
     {
       title: 'Card 2',
-      image: 'https://via.placeholder.com/150',
       content: 'Content 2',
     },
     {
       title: 'Card 2',
-      image: 'https://via.placeholder.com/150',
       content: 'Content 2',
     },
   ];

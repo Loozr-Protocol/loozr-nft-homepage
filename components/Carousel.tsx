@@ -2,6 +2,9 @@
 
 import React, { useState } from 'react';
 
+import Image from 'next/image';
+import nft from "/public/nft-img.png";
+
 const Carousel = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -27,7 +30,7 @@ const Carousel = ({ items }) => {
             }`}
           >
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img className="w-full" src={item.image} alt={item.title} />
+              <Image className="w-full" src={nft} alt={item.title} width={150} height={150} />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{item.title}</div>
                 <p className="text-gray-700 text-base">{item.content}</p>
@@ -35,7 +38,6 @@ const Carousel = ({ items }) => {
             </div>
           </div>
         ))}
-
       </div>
       <div className="">        
         <button onClick={handlePrev}>Prev</button>

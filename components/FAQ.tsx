@@ -84,7 +84,7 @@ const FAQ = () => {
                             {tab === 3 && ( 
                                 <motion.p
                                 initial={{ y: -100, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }} className=' mt-3 tracking-[0.4px]  ' >To get started, sign up for an account and explore various artists or creators. Once you find your favourite, navigate to their profile and locate the "Buy" coin button. Then, simply enter the desired amount of the artist token you want to purchase.</motion.p>
+                                animate={{ y: 0, opacity: 1 }} className=' mt-3 tracking-[0.4px]  ' >To get started, sign up for an account and explore various artists or creators. Once you find your favourite, navigate to their profile and locate the &quot;Buy&quot; coin button. Then, simply enter the desired amount of the artist token you want to purchase.</motion.p>
                             )}
                         </div>
                         <div className=' w-full border-b py-4 border-[#536079] ' > 
