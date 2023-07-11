@@ -7,7 +7,6 @@ import nft from "/public/nft-img.png";
 
 interface CarouselItem {
   title: string;
-  image: string;
   content: string;
 }
 
