@@ -5,7 +5,17 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import nft from "/public/nft-img.png";
 
-const Carousel = ({ items }: { items: any }) => {
+interface CarouselItem {
+  title: string;
+  image: string;
+  content: string;
+}
+
+interface CarouselProps {
+  items: CarouselItem[];
+}
+
+const Carousel: React.FC<CarouselProps> = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrev = () => {
