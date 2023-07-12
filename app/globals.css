@@ -19,6 +19,10 @@
   -webkit-text-stroke: 1px #393C43;
 }
 
+.gamer {
+  -webkit-text-stroke: 1px #fff;
+}
+
 .navbar {
   @apply top-0 left-0 p-0 m-0 w-full bg-transparent min-h-[80px] z-999 border-b-2 border-transparent
 }

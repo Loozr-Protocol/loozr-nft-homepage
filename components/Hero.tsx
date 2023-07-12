@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className="z-10 block lg:flex bg-transparent text-transparent max-w-6xl mx-auto">
+    <div className="z-10 block lg:flex bg-transparent text-transparent max-w-7xl mx-auto">
       <div className="flex flex-col lg:flex-row bg-transparent">
 
         <div className="block lg:-mt-32 bg-transparent lg:w-[49%]">

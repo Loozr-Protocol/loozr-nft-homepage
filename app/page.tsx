@@ -13,23 +13,28 @@ export default function Home() {
 
   const items = [
     {
-      title: 'Card 1',
+      title: 'CARD OF HARMONY',
+      sub: '#TIER1',
       content: 'Content 1',
     },
     {
       title: 'Card 2',
+      sub: '#TIER1',
       content: 'Content 2',
     },
     {
       title: 'Card 2',
+      sub: '#TIER1',
       content: 'Content 2',
     },    
     {
       title: 'Card 2',
+      sub: '#TIER1',
       content: 'Content 2',
     },
     {
       title: 'Card 2',
+      sub: '#TIER1',
       content: 'Content 2',
     },
   ];
