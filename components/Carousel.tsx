@@ -30,20 +30,20 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   };
 
   return (
-    <div className="flex space-x-4 py-28 bg-[#11151D]">
+    <div className="flex space-x-4 w-full px-6 md:px-20 py-28 bg-[#11151D]">
 
-      <div className="flex space-x-4 max-w-7xl mx-auto !bg-inherit">
+      <div className="md:flex space-x-4 max-w-7xl mx-auto !bg-inherit">
         {items.map((item, index) => (
           <div
             key={index}
-            className={`!bg-transparent transform transition-transform duration-500 ease-in-out ${
+            className={`!bg-transparent transform transition-transform duration-500 w-full md:w-1/5 ease-in-out ${
               index === activeIndex
                 ? 'scale-100 opacity-100'
                 : 'scale-75 opacity-50'
             }`}
           >
-            <div className="max-w-xl rounded overflow-hidden shadow-lg !bg-transparent">
-              <Image className="w-full bg-transparent" src={nft} alt={item.title} width={300} height={300} />
+            <div className="max-w-xl rounded overflow-hidden shadow-lg !bg-transparent p-4">
+              <Image className="w-full object-cover bg-transparent" src={nft} alt={item.title} width={300} height={300} />
               <div className="pt-4 !bg-transparent">
                 <div className="bg-transparent font-bold text-[17px] mb-2 flex">{item.title}
                 <span className="bg-transparent font-bold text-lg text-[#536079] mb-2">{item.sub}</span>
