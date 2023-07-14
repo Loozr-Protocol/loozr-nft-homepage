@@ -15,7 +15,7 @@ const FAQ = () => {
     }
 
     return (
-        <div className=' w-full px-6 md:px-20 flex  py-40 flex-col !bg-[#0c0f15] items-center ' >
+        <div className=' w-full px-6 md:px-20 flex  py-48 flex-col !bg-[#0c0f15] items-center ' >
 
             <div className="container">
                 <div className="sec-head custom-font relative text-center">
@@ -25,7 +25,7 @@ const FAQ = () => {
                     <h3 className="wow  !font-bold !text-white !leading-[1.1] !text-5xl " data-splitting>
                         FREQUENTLY ASKED!
                     </h3>
-                    <span className="tbg mt-">BUILDING FOR?</span>
+                    <span className="tbg mt- !bg-transparent">BUILDING FOR?</span>
                 </div>
             </div>
             <div className=' w-full flex lg:flex-row flex-col mt-6 mb-20 ' >
