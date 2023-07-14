@@ -28,7 +28,7 @@ const Hero = () => {
             <div className="mr-8">
               <button className="button btn-primary btn-lit !flex justify-center items-center"><span className="!bg-transparent">View Collection</span></button>
             </div>
-            <p className="wow txt !text-[14.7px] tracking-[0.4px] md:pr-8 text-white !font-normal md:max-w-[305px] animated" >Be an Early Backer and own a limited Loozr AR Access Card NFT for exclusive access, rewards & privileges in the Loozr ecosystem.</p>
+            <p className="wow txt !text-[14.7px] tracking-[0.4px] md:pr-8 text-[#9EAAC0] !font-normal md:max-w-[305px] animated" >Be an Early Backer and own a limited Loozr AR Access Card NFT for exclusive access, rewards & privileges in the Loozr ecosystem.</p>
           </div>
 
 
