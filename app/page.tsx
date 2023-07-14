@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-import { Carousel, CountdownTimer, FAQ, Footer, Hero, HowTo, Table, Modal } from "@/components";
+import { Carousel, FAQ, Footer, Hero, HowTo, Table, Modal } from "@/components";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);

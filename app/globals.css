@@ -15,6 +15,10 @@
   margin: 0 auto;
 }
 
+.max {
+  width: max-content !important;
+}
+
 .game {
   -webkit-text-stroke: 1px #393C43;
 }
@@ -642,4 +646,11 @@ input.lower { text-transform: uppercase; }
 .simple-btn.right:after {
   left: auto;
   right: 0;
+}
+
+/* Spacing */
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
 }

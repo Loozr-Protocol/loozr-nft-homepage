@@ -7,12 +7,12 @@ const HeroContent = () => {
       <div className='flex-col !bg-[#0c0f15] items-center ' >
 
         <div>
-          <div className="sec-head custom-font relative">
-            <span className="!bg-transparent tbg flex-row">NFT AR NFT</span>
-            <h6 id="gradenttext" className="wow text-pinkBlue-gradient fadeIn leading-[1.8] !font-medium !tracking-[3.5px] md:pb-9 !text-[14px] "data-wow-delay=".5s">
+          <div className="sec-head custom-font relative md:pt-6">
+            <span className="!bg-transparent max tbg flex-row">NFT AR NFT AR</span>
+            <h6 id="gradenttext" className="wow text-pinkBlue-gradient fadeIn leading-[1.8] !font-medium !tracking-[3.5px] md:pb-2 !text-[14px] "data-wow-delay=".5s">
               MINTING SOON – 9:00 AM UTC / 23RD JULY
             </h6>
-            <h3 className="!bg-transparent !font-black !text-white !leading-[1.1] !text-5xl !normal-case " data-splitting>
+            <h3 className="!bg-transparent !font-black !text-white !leading-[1.1] md:pt-5 !text-5xl !normal-case " data-splitting>
               Loozr AR Access <br /> Card Collection.
             </h3>
           </div>
@@ -21,7 +21,7 @@ const HeroContent = () => {
 
       </div>
 
-      <div className='w-[1280px] mx-auto flex justify-between'>
+      <div className='mx-auto flex justify-between'>
         <div className="flex flex-col-reverse bg-transparent !-mt-8 lg:flex-row">
           <div className="mr-8">
             <button className="button btn-primary btn-lit !flex justify-center items-center"><span className="!bg-transparent">View Collection</span></button>
