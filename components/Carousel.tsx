@@ -45,7 +45,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
             <div className="max-w-xl rounded overflow-hidden shadow-lg !bg-transparent p-4">
               <Image className="w-full object-cover bg-transparent" src={nft} alt={item.title} width={300} height={300} />
               <div className="pt-4 !bg-transparent">
-                <div className="bg-transparent font-bold text-[17px] mb-2 flex">{item.title}
+                <div className="bg-transparent font-bold text-[16px] mb-2 flex">{item.title}
                 <span className="bg-transparent font-bold text-lg text-[#536079] mb-2">{item.sub}</span>
                 </div>
                 <p className="bg-transparent text-gray-700 text-base">{item.content}</p>

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import {
   Drawer,
@@ -23,7 +24,7 @@ function Navbar() {
       <div className="container">
         <div id="block-avo-branding">
           <Link href="/" className="logo lg:!ml-10 ">
-            <img className="logo-light" src="/logo-light.png" alt="Home" width={123} height={41} />
+            <Image className="logo-light" src="/logo-light.png" alt="Home" width={123} height={41} />
           </Link>
         </div>
         <button

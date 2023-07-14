@@ -25,7 +25,7 @@ const FAQ = () => {
                     <h3 className="wow  !font-bold !text-white !leading-[1.1] !text-5xl " data-splitting>
                         FREQUENTLY ASKED!
                     </h3>
-                    <span className="tbg mt-">Answers</span>
+                    <span className="tbg mt-">BUILDING FOR?</span>
                 </div>
             </div>
             <div className=' w-full flex lg:flex-row flex-col mt-6 mb-20 ' >

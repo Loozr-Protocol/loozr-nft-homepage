@@ -3,46 +3,58 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className="z-10 block lg:flex bg-transparent text-transparent max-w-7xl mx-auto">
-      <div className="flex flex-col lg:flex-row bg-transparent">
+    <div className="z-10 relative block w-full lg:flex bg-transparent container mx-auto lg:mt-32">
+      <div className="md:-mt-12 bg-transparent mx-0">
 
-        <div className="block lg:-mt-32 bg-transparent lg:w-[49%]">
-          <h1 className="font-black bg-transparent text-4xl lg:text-[60px] leading-normal md:leading-[4.6875rem]">Loozr AR Access <br className="hidden sm:inline" /> Card Collection.</h1>
+        <div className='flex-col !bg-[#0c0f15] items-center ' >
 
-          <div className="flex flex-col-reverse sl:flex-row pt-4 justify-between bg-transparent">
-            <div className="md:mr-6">
-              <button type="button" className="bluePink-gradient flex rounded-full items-center justify-center mt-4 w-[212px] h-[65px]">
-                <Link href="" className="bg-transparent font-semibold text-lg flex">
-                  View Collection
-                </Link>
-              </button>
+          <div className="container mx-auto">
+            <div className="sec-head custom-font relative">
+              <span className="!bg-transparent tbg flex-row">NFT AR NFT</span>
+              <h6 id="gradenttext" className="wow fadeIn leading-[1.8] !font-medium tracking-[5.4px] !text-[15px] " data-wow-delay=".5s">
+                MINTING SOON – 9:00 AM UTC / 23RD JULY
+              </h6>
+              <h3 className="!bg-transparent !font-bold !text-white !leading-[1.1] !text-5xl " data-splitting>
+                Loozr AR Access <br /> Card Collection.
+              </h3>
             </div>
-            <p className=" text-regal-blue text-lg leading-normal">Be an Early Backer and own a limited Loozr AR Access Card NFT for exclusive access, rewards & privileges in the Loozr ecosystem.</p>
 
-          </div>
+            </div>
 
         </div>
-        <div className="flex bg-transparent mt-[24rem] md:mt-0 md:ml-[9rem]">
 
-          <div className="z-10 md:mt-[6rem] bg-transparent">
+        <div className='w-[1280px] mx-auto flex justify-between'>
+          <div className="flex flex-col-reverse lg:flex-row">
+            <div className="mr-8">
+              <button className="button btn-primary btn-lit !flex justify-center items-center"><span className="!bg-transparent">View Collection</span></button>
+            </div>
+            <p className="wow txt !text-[14.7px] tracking-[0.4px] md:pr-8 text-white !font-normal md:max-w-[305px] animated" >Be an Early Backer and own a limited Loozr AR Access Card NFT for exclusive access, rewards & privileges in the Loozr ecosystem.</p>
+          </div>
+
+
+          <div className="-mt-[16rem] !bg-transparent">
+            <div className="z-10 md:mt-[6rem] bg-transparent">
+              <Image 
+                src="/text_spinner.svg"
+                width={150}
+                height={150}
+                alt="text spinner"
+                className="animate-spin-slow rounded-xl bg-transparent"
+              />
+            </div>
+
             <Image 
-              src="/text_spinner.svg"
-              width={150}
-              height={150}
-              alt="text spinner"
-              className="animate-spin-slow rounded-xl bg-transparent"
+              src="/hero-img.png"
+              width={450}
+              height={639.5}
+              alt="nft hero"
+              className="bg-transparent nft-img -mt-[20rem] "
             />
           </div>
 
-          <Image 
-            src="/hero-img.png"
-            width={450}
-            height={639.5}
-            alt="nft hero"
-            className="bg-transparent nft-img -mt-[20rem] -ml-[9rem]"
-          />
         </div>
       </div>
+
 
 
     </div>
