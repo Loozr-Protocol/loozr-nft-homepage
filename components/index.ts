@@ -6,6 +6,7 @@ import Carousel from './Carousel';
 import HowTo from './HowTo';
 import FAQ from './FAQ';
 import Footer from './Footer';
+import Table from './Table';
 
 export {
   Hero,
@@ -15,5 +16,6 @@ export {
   Carousel,
   HowTo,
   FAQ,
-  Footer
+  Footer,
+  Table,
 }

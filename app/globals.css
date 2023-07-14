@@ -46,7 +46,10 @@
 }
 
 .bluePink-gradient {
-  background: linear-gradient(237.71deg, #8369F4 24.07%, #F039E2 116.61%);
+  background: linear-gradient(183deg, #8369F4 0%, #F039E2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .colorme {

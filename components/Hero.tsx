@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className="z-10 relative block w-full lg:flex bg-transparent container mx-auto lg:mt-32">
+    <div className="z-10 relative block w-full lg:flex bg-transparent container mx-auto lg:mt-16">
       <div className="md:-mt-12 bg-transparent mx-0">
 
         <div className='flex-col !bg-[#0c0f15] items-center ' >
@@ -11,10 +11,10 @@ const Hero = () => {
           <div className="container mx-auto">
             <div className="sec-head custom-font relative">
               <span className="!bg-transparent tbg flex-row">NFT AR NFT</span>
-              <h6 id="gradenttext" className="wow fadeIn leading-[1.8] !font-medium !tracking-[3.5px] pb-4 !text-[14px] " data-wow-delay=".5s">
+              <h6 id="gradenttext" className="wow text-pinkBlue-gradient fadeIn leading-[1.8] !font-medium !tracking-[3.5px] md:pb-9 !text-[14px] "data-wow-delay=".5s">
                 MINTING SOON – 9:00 AM UTC / 23RD JULY
               </h6>
-              <h3 className="!bg-transparent !font-bold !text-white !leading-[1.1] !text-5xl " data-splitting>
+              <h3 className="!bg-transparent !font-black !text-white !leading-[1.1] !text-5xl !normal-case " data-splitting>
                 Loozr AR Access <br /> Card Collection.
               </h3>
             </div>
@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
 
         <div className='w-[1280px] mx-auto flex justify-between'>
-          <div className="flex flex-col-reverse lg:flex-row">
+          <div className="flex flex-col-reverse bg-transparent !-mt-8 lg:flex-row">
             <div className="mr-8">
               <button className="button btn-primary btn-lit !flex justify-center items-center"><span className="!bg-transparent">View Collection</span></button>
             </div>
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
 
 
-          <div className="mt-[1rem] !bg-transparent">
+          <div className="-mt-[8rem] !bg-transparent">
             <div className="z-10 md:mt-[6rem] bg-transparent">
               <Image 
                 src="/text_spinner.svg"
