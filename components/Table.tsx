@@ -3,7 +3,7 @@ import React from 'react'
 const Table = () => {
   return (
     <div className="!bg-transparent w-full px-6 py-8 md:px-2">
-      <table class="table-auto">
+      <table className="table-auto">
         <thead>
           <tr>
             <th> Benefits</th>
