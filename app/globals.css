@@ -271,6 +271,20 @@ input.lower { text-transform: uppercase; }
   margin-left: 0;
 }
 
+.button-lite {
+  padding: 12px 30px;
+  border: 1px solid #536079 !important;
+  border-radius: 70px;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden; 
+}
+
 .button {
   padding: 12px 30px;
   border: 1px solid #536079a4 !important;

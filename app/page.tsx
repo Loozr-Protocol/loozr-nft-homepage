@@ -42,13 +42,10 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       {isModalOpen && <Modal onClose={closeModal} />}
-      <div className="p-4">
-
-        <CountdownTimer />
-      </div>
 
 
-        <div>
+
+        <div className="container mx-auto">
           <Hero />
         </div>
 

@@ -1,63 +1,26 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import HeroImage from './HeroImage';
+import HeroContent from './HeroContent';
+import CountdownTimer from './CountdownTimer';
 
 const Hero = () => {
   return (
-    <div className="z-10 relative block w-full lg:flex bg-transparent container mx-auto lg:mt-16">
-      <div className="md:-mt-12 bg-transparent mx-0">
+    <div className="flex container mx-auto relative w-full z-10 !bg-[#0c0f16] ">
 
-        <div className='flex-col !bg-[#0c0f15] items-center ' >
-
-          <div className="container mx-auto">
-            <div className="sec-head custom-font relative">
-              <span className="!bg-transparent tbg flex-row">NFT AR NFT</span>
-              <h6 id="gradenttext" className="wow text-pinkBlue-gradient fadeIn leading-[1.8] !font-medium !tracking-[3.5px] md:pb-9 !text-[14px] "data-wow-delay=".5s">
-                MINTING SOON – 9:00 AM UTC / 23RD JULY
-              </h6>
-              <h3 className="!bg-transparent !font-black !text-white !leading-[1.1] !text-5xl !normal-case " data-splitting>
-                Loozr AR Access <br /> Card Collection.
-              </h3>
-            </div>
-
-            </div>
-
-        </div>
-
-        <div className='w-[1280px] mx-auto flex justify-between'>
-          <div className="flex flex-col-reverse bg-transparent !-mt-8 lg:flex-row">
-            <div className="mr-8">
-              <button className="button btn-primary btn-lit !flex justify-center items-center"><span className="!bg-transparent">View Collection</span></button>
-            </div>
-            <p className="wow txt !text-[14.7px] tracking-[0.4px] md:pr-8 text-[#9EAAC0] !font-normal md:max-w-[305px] animated" >Be an Early Backer and own a limited Loozr AR Access Card NFT for exclusive access, rewards & privileges in the Loozr ecosystem.</p>
-          </div>
-
-
-          <div className="-mt-[8rem] !bg-transparent">
-            <div className="z-10 md:mt-[6rem] bg-transparent">
-              <Image 
-                src="/text_spinner.svg"
-                width={150}
-                height={150}
-                alt="text spinner"
-                className="animate-spin-slow rounded-xl bg-transparent"
-              />
-            </div>
-
-            <Image 
-              src="/hero-img.png"
-              width={450}
-              height={639.5}
-              alt="nft hero"
-              className="bg-transparent nft-img -mt-[34rem] "
-            />
-          </div>
-
-        </div>
+      <div className="!bg-transparent">
+        <CountdownTimer />
+        <HeroContent />
       </div>
 
-
+      <div className="!bg-transparent">
+        <HeroImage />
+      </div>
 
     </div>
+
+
+
   )
 }
 
