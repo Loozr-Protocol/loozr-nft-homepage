@@ -55,22 +55,22 @@ const CountdownTimer = () => {
           <div className="uppercase flex">
             <div className="flex flex-col items-center p-2.5 lg:p-4 border-t mr-4 lg:mr-6 rounded-md w-[94px]">
               <span className="text-lg lg:text-[40px] sm:text-2xl font-black">{days}</span>
-              <span className="text-[12px] sm:text-[15px] lg:text-lg text-gray-400 font-medium pt-4 md:pt-6">Days</span>
+              <span className="text-[14.7px] sm:text-[15px] lg:text-lg text-gray-400 font-medium pt-4 md:pt-6">Days</span>
             </div>
 
             <div className="flex flex-col items-center p-2.5 lg:p-4 border-t mr-4 lg:mr-6 rounded-md w-[94px]">
               <span className="text-lg lg:text-[40px] sm:text-2xl font-black">{hours}</span>
-              <span className="text-[12px] sm:text-[15px] lg:text-lg text-gray-400 font-medium pt-4 md:pt-6">Hours</span>
+              <span className="text-[14.7px] sm:text-[15px] lg:text-lg text-gray-400 font-medium pt-4 md:pt-6">Hours</span>
             </div>
 
             <div className="flex flex-col items-center p-2.5 lg:p-4 border-t mr-4 lg:mr-6 rounded-md w-[94px]">
               <span className="text-lg lg:text-[40px] sm:text-2xl font-black">{minutes}</span>
-              <span className="text-[12px] sm:text-[15px] lg:text-lg text-gray-400 font-medium pt-4 md:pt-6">Minutes</span>
+              <span className="text-[14.7px] sm:text-[15px] lg:text-lg text-gray-400 font-medium pt-4 md:pt-6">Minutes</span>
             </div>
 
             <div className="flex flex-col items-center p-2.5 lg:p-4 border-t mr-4 lg:mr-6 rounded-md w-[94px]">
               <span className="text-lg lg:text-[40px] sm:text-2xl font-black">{seconds}</span>
-              <span className="text-[12px] sm:text-[15px] lg:text-lg text-gray-400 font-medium pt-4 md:pt-6">Seconds</span>
+              <span className="text-[14.7px] sm:text-[15px] lg:text-lg text-gray-400 font-medium pt-4 md:pt-6">Seconds</span>
             </div>
           </div>
         </div>
