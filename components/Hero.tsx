@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="container mx-auto">
             <div className="sec-head custom-font relative">
               <span className="!bg-transparent tbg flex-row">NFT AR NFT</span>
-              <h6 id="gradenttext" className="wow fadeIn leading-[1.8] !font-medium tracking-[5.4px] !text-[15px] " data-wow-delay=".5s">
+              <h6 id="gradenttext" className="wow fadeIn leading-[1.8] !font-medium !tracking-[3.5px] pb-4 !text-[14px] " data-wow-delay=".5s">
                 MINTING SOON – 9:00 AM UTC / 23RD JULY
               </h6>
               <h3 className="!bg-transparent !font-bold !text-white !leading-[1.1] !text-5xl " data-splitting>
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
 
 
-          <div className="-mt-[16rem] !bg-transparent">
+          <div className="mt-[1rem] !bg-transparent">
             <div className="z-10 md:mt-[6rem] bg-transparent">
               <Image 
                 src="/text_spinner.svg"
@@ -48,7 +48,7 @@ const Hero = () => {
               width={450}
               height={639.5}
               alt="nft hero"
-              className="bg-transparent nft-img -mt-[20rem] "
+              className="bg-transparent nft-img -mt-[34rem] "
             />
           </div>
 
