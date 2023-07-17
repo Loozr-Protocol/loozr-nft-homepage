@@ -45,7 +45,7 @@ export default function Home() {
     ['Access Card NFT', 'Harmony', 'Melody', 'Rhythm', 'Symphony'],
     ['Exclusive Platform Ownership', 'Yes', 'Yes', 'Yes', 'Yes'],
     ['$LZR Confirmed Airdrop', 'Yes', 'Yes', 'Yes', 'Yes'],
-    ['Special Roles', 'LoozrFam', 'Builder', 'Degen', 'Degen'],
+    ['Special Roles', 'LoozrFam', 'Builder', 'Degen', 'OG Role'],
     ['Active Governance Participation', 'Yes', 'Yes', 'Yes', 'Yes'],
     ['Loozr DAO Council Membership', ' ', 'Yes', 'Yes', 'Yes'],
     ['Verified Badge', ' ', ' ', 'Yes', 'Yes'],
