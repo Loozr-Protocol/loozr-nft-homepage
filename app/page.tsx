@@ -38,6 +38,21 @@ export default function Home() {
       content: 'Content 2',
     },
   ];
+
+  const headers = ['Benefits', 'Tier 1', 'Tier 2', 'Tier 3', 'Tier 4'];
+
+  const data = [
+    ['Access Card NFT', 'Harmony', 'Melody', 'Rhythm', 'Symphony'],
+    ['Exclusive Platform Ownership', 'Yes', 'Yes', 'Yes', 'Yes'],
+    ['$LZR Confirmed Airdrop', 'Yes', 'Yes', 'Yes', 'Yes'],
+    ['Special Roles', 'LoozrFam', 'Builder', 'Degen', 'Degen'],
+    ['Active Governance Participation', 'Yes', 'Yes', 'Yes', 'Yes'],
+    ['Loozr DAO Council Membership', ' ', 'Yes', 'Yes', 'Yes'],
+    ['Verified Badge', ' ', ' ', 'Yes', 'Yes'],
+    ['Special Monthly Airdrops', ' ', ' ', 'Yes', 'Yes'],
+    ['Loozr AR Metaverse Access', ' ', ' ', ' ', 'Yes'],
+    
+  ];
   
   return (
     <main className="overflow-hidden">
@@ -55,7 +70,7 @@ export default function Home() {
 
       <HowTo />
 
-      <Table />
+      <Table headers={headers} data={data} />
 
       <FAQ />
 
