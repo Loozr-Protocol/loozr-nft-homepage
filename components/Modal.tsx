@@ -14,7 +14,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
 
         <div className="z-50 bg-soki rounded-xl p-4 md:px-8 md:py-8 w-[390px] sm:w-[600px] xl:w-[64rem] md:mx-auto">
           <div className="flex flex-col sm:flex-row bg-transparent items-center">
-            <div className="bg-transparent flex ml-0 mx-auto justify-center sm:justify-start items-center sm:items-start md:mt-24 ">
+            <div className="!bg-transparent md:flex ml-0 mx-auto justify-center sm:justify-start items-center hidden sm:items-start md:mt-24 ">
               <Image 
                 alt="hero"
                 src="/hero-img.png"
@@ -24,33 +24,36 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
               />
             </div>
 
-            <div className="bg-transparent ">
+            <div className="!bg-transparent flex flex-col items-center md:block">
               <CountDownTimerModal />
 
-              <div className="pt-8">
-                <h2 className="text-pinkBlue-gradient text-[12px] font-medium !bg-transparent md:tracking-[.35em] tracking-wider">
-                  MINTING SOON - 9:00 AM UTC/23RD JUNE
-                </h2>
-                <p className="text-2xl md:text-[30px] font-bold pt-3">Loozr AR Access Card <br /> Collection.</p>
+              <div>
+                <div className="!bg-transparent pt-8">
+                  <h2 className=" text-pinkBlue-gradient text-[12px] font-medium !bg-transparent md:tracking-[.35em] tracking-wider">
+                    MINTING SOON - 9:00 AM UTC/23RD JUNE
+                  </h2>
+                  <p className="!bg-transparent text-2xl md:text-[30px] font-bold pt-3">Loozr AR Access Card <br /> Collection.</p>
+                </div>
+
+                <div className="!bg-transparent flex pt-8">
+                  <div className="!bg-transparent">
+                    <button type="button" className="!bg-transparent border flex rounded-full button justify-center items-center mr-4">
+                      <Link href="https://medium.com/@officialloozr" target="_blank" className="bg-transparent">
+                        Learn More
+                      </Link>
+                    </button>
+                  </div>
+                  <div className="!bg-transparent">
+                    <button className="button btn-primary btn-lit !flex justify-center items-center">
+                      <Link href="/" className="!bg-transparent">
+                      </Link>
+                      <span className="!bg-transparent">View Collection</span>
+                    </button>
+                  </div>
+              </div>
               </div>
 
-              <div className="flex pt-8">
-                <div>
-                  <button type="button" className="border flex rounded-full button justify-center items-center mr-4">
-                    <Link href="https://medium.com/@officialloozr" target="_blank" className="bg-transparent">
-                      Learn More
-                    </Link>
-                  </button>
-                </div>
-                <div>
-                  <button className="button btn-primary btn-lit !flex justify-center items-center">
-                    <Link href="/" className="!bg-transparent">
-                    </Link>
-                    <span className="!bg-transparent">View Collection</span></button>
-                </div>
-              </div>
-
-              <p className="text-someBlue md:text-[18px] pt-12 pb-4 text-center sm:text-left">
+              <p className="!bg-transparent text-someBlue md:text-[18px] pt-12 pb-4 text-center sm:text-left">
               Already a testnet user?&nbsp; 
                 <button>
                   <Link href="https://testnet.loozr.io/explore" target="_blank" className="text-white">

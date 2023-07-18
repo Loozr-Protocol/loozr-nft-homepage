@@ -5,15 +5,15 @@ import CountdownTimer from './CountdownTimer';
 
 const Hero = () => {
   return (
-    <div className="clear-both z-10 !bg-[#0c0f16] ">
-      <div className="parent clear-both">
+    <div className=" z-10 !bg-[#0c0f16]  max-w-[1280px] mx-auto">
+      <div className="parent">
 
-        <div className="!bg-transparent">
+        <div className="!bg-transparent px-4 md:p-0">
           <CountdownTimer />
           <HeroContent />
         </div>
 
-        <div className="!bg-transparent clear-both">
+        <div className="!bg-transparent ">
           <HeroImage />
         </div>
       </div>

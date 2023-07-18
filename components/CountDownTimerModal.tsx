@@ -42,7 +42,7 @@ const CountDownTimerModal = () => {
 
   return (
 
-    <div className="container mx-auto">
+    <div className="!bg-transparent container mx-auto">
 
       {showTime ? (
         <>
@@ -51,10 +51,10 @@ const CountDownTimerModal = () => {
       ) : (
 
       <>
-        <div className="pt-10">
-          <div className="uppercase flex">
-            <div className="flex flex-col items-center p-2.5 lg:p-4 border-t border-[#9EAAC0] mr-4 lg:mr-6 rounded-md w-[86px]">
-              <span className="text-lg pt-6 lg:text-[30px] sm:text-2xl font-black">{days}</span>
+        <div className="!bg-transparent pt-10">
+          <div className="!bg-transparent uppercase flex">
+            <div className="!bg-transparent flex flex-col items-center p-2.5 lg:p-4 border-t border-[#9EAAC0] mr-4 lg:mr-6 rounded-md w-[86px]">
+              <span className="!bg-transparent text-lg pt-6 lg:text-[30px] sm:text-2xl font-black">{days}</span>
               <span className="text-[14px] text-[#9EAAC0] font-medium pt-4 md:pt-6">Days</span>
             </div>
 

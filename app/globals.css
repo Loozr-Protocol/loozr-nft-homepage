@@ -58,13 +58,7 @@
 
 .colorme {
   background: #9EAAC0;
-}
-
-#gradenttext {  
-  background: linear-gradient(255.45deg, #8369F4 39.69%, #F039E2 55.08%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}  
+} 
 
 .soki {
   background: linear-gradient(156.22deg, #536079 -345.77%, #11151D 49.96%);
@@ -83,8 +77,6 @@
   }
   .active-tab-bottom {
     @apply md:font-semibold text-sm text-white relative before:absolute before:w-full before:h-0.5 before:bg-loozr-purple before:bottom-[-13px];
-  }
-  .active-tab-top {
   }
 }
 
