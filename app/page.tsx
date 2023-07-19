@@ -59,8 +59,7 @@ export default function Home() {
       {isModalOpen && <Modal onClose={closeModal} />}
 
 
-
-        <div className="container mx-auto">
+        <div className="container lg:contain mx-auto">
           <Hero />
         </div>
 

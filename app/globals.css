@@ -646,3 +646,9 @@ input.lower { text-transform: uppercase; }
   grid-template-columns: 1fr 1fr;
   column-gap: 25px;
 }
+
+.contain {
+  max-width: 1024px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

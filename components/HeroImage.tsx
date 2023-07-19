@@ -20,7 +20,7 @@ const HeroImage = () => {
                 width={450}
                 height={639.5}
                 alt="nft hero"
-                className="bg-transparent nft-img"
+                className="bg-transparent"
               />
             </div>
     </div>

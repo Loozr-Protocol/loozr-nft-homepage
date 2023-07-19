@@ -4,7 +4,7 @@ const HeroContent = () => {
   return (
     <div className="md:-mt-12 bg-transparent mx-0">
 
-      <div className='flex-col !bg-[#0c0f15] items-center ' >
+      <div className='flex-col !bg-[#0c0f15] items-center'>
 
         <div>
           <div className="sec-head custom-font relative md:pt-6">
