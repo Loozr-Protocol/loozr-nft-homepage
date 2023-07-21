@@ -19,22 +19,17 @@ export default function Home() {
     },
     {
       title: 'Card 2',
-      sub: '#TIER1',
+      sub: '#TIER2',
       content: 'Content 2',
     },
     {
-      title: 'Card 2',
-      sub: '#TIER1',
+      title: 'Card 3',
+      sub: '#TIER3',
       content: 'Content 2',
     },    
     {
-      title: 'Card 2',
-      sub: '#TIER1',
-      content: 'Content 2',
-    },
-    {
-      title: 'Card 2',
-      sub: '#TIER1',
+      title: 'Card 4',
+      sub: '#TIER4',
       content: 'Content 2',
     },
   ];
